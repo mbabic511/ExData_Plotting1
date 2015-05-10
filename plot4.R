@@ -17,9 +17,8 @@ plot4 <- function() {
   data <- cbind(dateTime, data)
   names(data)[1] <- "datetime"
   
-  #initialize .png graphics device - transparent background, cairo type for anti-aliasing,
-  #dimenisions as in given example plot
-  png("plot4.png", bg = "transparent", type="cairo", width = 504, height = 504, units = "px")
+  #initialize .png graphics device - transparent background, cairo type for anti-aliasing
+  png("plot4.png", bg = "transparent", type="cairo", width = 480, height = 480, units = "px")
   # 2 by 2 matrix for plots
   par(mfcol = c(2,2))
   

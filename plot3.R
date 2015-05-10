@@ -17,9 +17,8 @@ plot3 <- function() {
   data <- cbind(dateTime, data)
   names(data)[1] <- "datetime"
   
-  #initialize .png graphics device - transparent background, cairo type for anti-aliasing,
-  #dimenisions as in given example plot
-  png("plot3.png", bg = "transparent", type="cairo", width = 504, height = 504, units = "px")
+  #initialize .png graphics device - transparent background, cairo type for anti-aliasing
+  png("plot3.png", bg = "transparent", type="cairo", width = 480, height = 480, units = "px")
   
   # initialize a plot and draw lines for Sub_metering_1
   plot(data$datetime, data$Sub_metering_1, type="l", xlab = "", ylab = "Energy sub metering")
